@@ -1,0 +1,6 @@
+<h2>Create Order</h2>
+<form (ngSubmit)="onSubmit()">
+  <label>Product ID: <input type="number" [(ngModel)]="order.orderItems[0].productId" name="productId" required></label>
+  <label>Quantity: <input type="number" [(ngModel)]="order.orderItems[0].quantity" name="quantity" required></label>
+  <button type="submit">Create Order</button>
+</form>

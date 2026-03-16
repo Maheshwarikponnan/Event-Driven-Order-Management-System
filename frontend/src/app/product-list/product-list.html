@@ -1,0 +1,6 @@
+<h2>Product List</h2>
+<ul>
+  @for (product of products; track product.id) {
+    <li>{{ product.name }} - ${{ product.price }} (Stock: {{ product.stockQuantity }})</li>
+  }
+</ul>
